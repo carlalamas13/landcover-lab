@@ -2,16 +2,16 @@
 
 ## Overview
 
-LandCover AI Lab is a machine learning and deep learning project focused on satellite image classification.
+LandCover AI Lab is a Machine learning and Deep Learning project focused on satellite image classification.
 
-The goal is to investigate and compare traditional machine learning algorithms, computer vision techniques, and deep learning architectures for multiclass land cover classification.
+The goal is to investigate and compare traditional Machine Learning algorithms, computer vision techniques, and Deep Learning architectures for multiclass land cover classification.
 
 The project follows an experimental approach, from dataset exploration and baseline modelling to convolutional neural networks and transfer learning.
 
 ## Objectives
 
 - Explore and characterize a labelled satellite imagery dataset.
-- Establish baseline models using traditional machine learning algorithms.
+- Establish baseline models using traditional Machine Learning algorithms.
 - Investigate feature extraction techniques for computer vision.
 - Implement and train convolutional neural networks using PyTorch.
 - Evaluate transfer learning with a pretrained architecture.
@@ -31,7 +31,7 @@ The project follows an experimental approach, from dataset exploration and basel
 ## Project Workflow
 
 1. Dataset exploration and preparation.
-2. Traditional machine learning baselines.
+2. Traditional Machine Learning baselines.
 3. Classical computer vision techniques.
 4. Convolutional neural network development.
 5. Transfer learning and model comparison.
