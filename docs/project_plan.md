@@ -62,6 +62,22 @@ The final splitting strategy will be determined after inspecting the dataset. Po
 
 Random seeds will be fixed where applicable, and comparable evaluation conditions will be maintained across experiments.
 
+### Initial Data Splitting Strategy
+
+The dataset is initially divided into three subsets:
+
+- Training: 70% of the images.
+- Validation: 15% of the images.
+- Test: 15% of the images.
+
+Stratified sampling is used to preserve class proportions across the three subsets. A fixed random seed (`42`) ensures reproducibility under the same input conditions.
+
+The `scripts/create_splits.py` script generates a local CSV manifest containing each image path, class label, and assigned split. The manifest is excluded from version control because it can be regenerated using the script.
+
+### Evaluation Limitations
+
+The initial random stratified split does not guarantee geographic independence between subsets. The resulting test performance will therefore be interpreted as performance on a random holdout, rather than evidence of generalization to geographically independent locations.
+
 ## 5. Planned Models
 
 ### Traditional Machine Learning

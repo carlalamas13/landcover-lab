@@ -93,9 +93,21 @@ The script automatically:
 
 The dataset is stored locally and is excluded from version control.
 
-### 3. Explore the Data
+### 3. Create the Data Splits
 
-Once the dataset has been prepared, run the exploratory analysis notebook in the `notebooks/` directory using Jupyter or Visual Studio Code.
+Generate a reproducible stratified split manifest:
+
+```powershell
+python scripts/create_splits.py
+```
+
+The script assigns each image to the training, validation, or test subset while preserving class proportions.
+
+The generated manifest is stored in `data/processed/split_manifest.csv` and is excluded from version control.
+
+### 4. Explore the Data
+
+Open `notebooks/01_data_exploration.ipynb` in Visual Studio Code or Jupyter to reproduce the exploratory analysis.
 
 ## Project Status
 
