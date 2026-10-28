@@ -107,6 +107,7 @@ Conclusions will consider both overall performance and class-specific behaviour.
 - Introduce automated tests as reusable components are developed.
 - Store relevant figures and experimental outputs in `reports/`.
 - Maintain the configuration required to reproduce the environment.
+- Automate dataset acquisition, integrity checks, extraction, and validation through reusable scripts in `scripts/`.
 
 ## 8. Project Phases
 

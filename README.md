@@ -57,6 +57,45 @@ The EuroSAT repository identifies the dataset licence as MIT. The applicable Cop
 
 Downloaded datasets and trained model weights will remain outside version control. Only the code, documentation, and relevant experimental results will be stored in this repository.
 
+## Getting Started
+
+### 1. Set Up the Environment
+
+Create and activate a Python virtual environment.
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+Install the project dependencies:
+
+```powershell
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### 2. Prepare the Dataset
+
+Run the dataset preparation script from the project root:
+
+```powershell
+python scripts/prepare_dataset.py
+```
+
+The script automatically:
+
+- Downloads the EuroSAT RGB archive if it is not available locally.
+- Verifies the archive checksum.
+- Validates the expected directory structure and class distribution.
+- Extracts the images into `data/raw/EuroSAT_RGB/`.
+- Checks the extracted image counts.
+
+The dataset is stored locally and is excluded from version control.
+
+### 3. Explore the Data
+
+Once the dataset has been prepared, run the exploratory analysis notebook in the `notebooks/` directory using Jupyter or Visual Studio Code.
 
 ## Project Status
 
