@@ -1,0 +1,17 @@
+# Virtual environment
+.venv/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Downloaded data
+data/*
+!data/.gitkeep
+
+# Generated model weights and artifacts
+models/*
+!models/.gitkeep
