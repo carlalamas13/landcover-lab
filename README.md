@@ -39,9 +39,24 @@ The project follows an experimental approach, from dataset exploration and basel
 
 ## Dataset
 
-EuroSAT is the initial candidate dataset. Its structure, licensing, access method, and suitability for the experimental setup will be reviewed before data ingestion.
+EuroSAT is the selected dataset for the initial experiments.
 
-The dataset and trained model weights will not be committed to the repository.
+It contains approximately 27,000 labelled and georeferenced Sentinel-2 image patches across ten land cover classes.
+
+The project will initially use the RGB version, consisting of 64 × 64 pixel images with three colour channels. The multispectral version, which includes all 13 Sentinel-2 bands, may be investigated as a future extension.
+
+### Data Sources
+
+- [Official EuroSAT dataset (Zenodo)](https://zenodo.org/records/7711810)
+- [EuroSAT source repository](https://github.com/phelber/EuroSAT)
+- [Original research paper](https://doi.org/10.1109/JSTARS.2019.2918242)
+
+### Data Management and Licensing
+
+The EuroSAT repository identifies the dataset licence as MIT. The applicable Copernicus Sentinel data terms should also be reviewed.
+
+Downloaded datasets and trained model weights will remain outside version control. Only the code, documentation, and relevant experimental results will be stored in this repository.
+
 
 ## Project Status
 

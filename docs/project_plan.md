@@ -15,17 +15,36 @@ The task will initially be formulated as a supervised multiclass classification 
 
 ## 3. Dataset
 
-EuroSAT is the initial candidate dataset.
+EuroSAT RGB has been selected for the initial experiments.
 
-Before incorporating it into the project, the following aspects will be investigated:
+### Source
 
-- Official data source and usage terms.
-- File structure and class labels.
-- Number of images and class distribution.
-- Image characteristics and available channels.
-- Potential limitations when evaluating model generalization.
+- Official dataset: https://zenodo.org/records/7711810
+- Source repository: https://github.com/phelber/EuroSAT
+- Original publication: https://doi.org/10.1109/JSTARS.2019.2918242
 
-Downloaded data will remain outside version control.
+### Dataset Characteristics
+
+- Approximately 27,000 labelled and georeferenced image patches.
+- Ten land cover categories.
+- RGB images with three colour channels.
+- Image resolution of 64 × 64 pixels.
+- JPEG image format in the RGB archive.
+
+### Scope
+
+The initial experiments will use RGB images to establish a reproducible classification baseline and compare traditional Machine Learning, computer vision, and Deep Learning approaches.
+
+The 13-band multispectral version is outside the initial scope and may be evaluated as a future extension.
+
+### Data Management
+
+The dataset will be downloaded from the official Zenodo record and stored locally under `data/raw/`.
+
+Downloaded data will remain outside version control. The repository will document the dataset source, relevant licensing information, and the procedures required to obtain it.
+
+The final train, validation, and test splitting strategy will be selected after inspecting the dataset structure and assessing potential data leakage.
+
 
 ## 4. Experimental Methodology
 
